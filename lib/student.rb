@@ -4,6 +4,9 @@ require 'interactive_record.rb'
 
 class Student < InteractiveRecord
 
+    def attr_accessor
+    end
+
 
 
 end
