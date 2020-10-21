@@ -20,7 +20,12 @@ class InteractiveRecord
         column_names.compact
     end
 
-    def initialize(attributes)
+    def initialize(attributes={})
+        attributes.each do |key, value|
+            self.send("#{key}=", value)
+        end
     end
+
+
 
 end
